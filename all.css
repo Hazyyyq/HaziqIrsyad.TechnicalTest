@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "Skranji";
+    src: url(Skranji-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color:rgb(19 ,30 , 35);
+    font-family: Skranji,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+
+nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgba(255, 255, 255, 0.021);
+    backdrop-filter: blur(10px) ;
+    box-shadow: 3px 3px 5px;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+nav a:hover{
+    background-color:rgb(91, 173, 201);
+    color: rgb(36, 64, 75);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.login {
+
+    background-color: rgb(212, 126, 13);
+    border-radius: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 200vh;
+    width: 30%;
+    z-index: 999;
+    background-color: rgb(19 ,30 , 35);
+    box-shadow: -10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px) ;
+    transition: 0.5s;
+
+
+}
+
+.logo {
+    font-size: larger;
+        color: rgb(255, 255, 255);
+        font-family: Skranji,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menuButton{
+    display: none;
+}
+
+@media(max-width: 75em) {
+    .hideOnMobile{
+        display: none;
+    } 
+
+    .menuButton{
+        display: block;
+    }
+}
+
+@media (max-width: 37.5em) {
+    .sidebar{
+        width: 30%;
+    }
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.Organizer {
+    position: sticky;
+    top:0;
+    z-index: 10;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100%;
+    font-size: 24px;
+    box-shadow: 10px -10px 10px;
+
+}
+
+.Organizer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10px;
+}
+
+.Organizer li{
+    padding: 10px 10px;
+}
+
+.Organizer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Organizer a:hover {
+    background-color:rgba(0, 191, 255, 0.774);
+    color: rgb(36, 64, 75);
+    border-radius: 4.5px;
+    transition: 0.5s;
+}
+
+.All-Grid {
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 10px; 
+    box-shadow: 10px 5px -10px;
+}
+
+
+@media (max-width: 600px) {
+    .All-Grid {
+        grid-template-columns: 1fr;  
+    }
+
+    .Organizer {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 750px) {
+    .All-Grid {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
+
+@media (min-width: 751px) {
+    .All-Grid {
+        grid-template-columns: repeat(3, 1fr);  
+        height: fit-content;
+    }
+}
+
+.topCommittee {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+
+}
+
+.Programme {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.PublicRelations {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.Publicity {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.Sponsorship {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.Logistics {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.Technical {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.Design {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white 0%,white 50%, transparent 50%, transparent 100%);
+
+}
+
+.imgBox {
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.description{
+    color: aliceblue;
+}
+
+.CommitteeSocMed {
+    text-decoration: none;
+
+}
+.CommitteeSocMed ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.CommitteeSocMed li{
+    width: 10px;
+    margin-top: 10px;
+
+}
+
+
+.Meet{
+    color: rgb(239, 246, 139);
+}
